@@ -1,38 +1,85 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&family=Open+Sans&family=Poppins:wght@400;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+p{
+    font-size: 1.6rem;
+    font-weight: 300;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h2{
+    font-size: 5rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.App{
+    background: url('assets/bg.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+    color: #fff;
 }
 
-.App-link {
-  color: #61dafb;
+.container{
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.search{
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.search input{
+    padding: .5rem 1.5rem;
+    border-radius: 17px;
+    font-size: 1rem;
+    border: 1px solid rgb(255, 255, 255, 0.8);
+    background: rgb(255, 255, 255, 0.1);
+    color: #fff;
+}
+
+::placeholder{
+    color: #fff;
+}
+
+.top{
+    margin-left: 1rem;
+}
+
+.bottom{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    /* border-top: 2px solid rgba(112, 25, 25, 0.829); */
+    align-items: center;
+    background-color: rgb(255, 255, 255, 0.15);
+    height: 5rem;
+    text-align: center;
+    color: rgba(112, 25, 25, 0.829);
+    margin: 1rem;
+    border-radius: 15px;
+}
+
+.bottom p{
+    font-weight: 500;
+}
+
+@media screen and (max-width: 360px){
+    h2{
+        font-size: 3rem;
+    }
+    p{
+        font-size: 0.9rem;
+    }
 }
